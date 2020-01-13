@@ -74,3 +74,5 @@ Route::get('siswa/{nama}/{nilai?}', function ($nama,$nilai = ' Belum Memiliki Ni
 
 Route::get('contoh','ContohController@latihan');
 Route::get('profile','ContohController@latihan2');
+Route::get('profile2','ContohController@latihan3');
+Route::get('profile3','ContohController@latihan4');

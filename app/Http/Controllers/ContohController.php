@@ -15,4 +15,14 @@ class ContohController extends Controller
         $b = 'Syaefuloh';
         return 'Nama Saya : '.$a.' '.$b;
     }
+
+    public function latihan3(){
+        $a = 'Boces';
+        return view('test',compact('a'));
+    }
+    public function latihan4(){
+        $a = 'Bey';
+        return view('test2',['nama' => $a]);
+    }
+
 }

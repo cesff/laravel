@@ -41,7 +41,7 @@ Route::get('angkot/{jurusan}', function () {
     $data = 'Angkot Jurusan:';
     return $data .' '.$jurusan;
 });
-Route::get('angkot/{jurusan}/{jadwal}', function () {
+Route::get('angkot/{jurusan}/{jadwal}',function(){
     $jurusan = 'Cibaduyut - Karang Setra';
     $data = 'Angkot Jurusan:';
     $jadwal ='Berangkat Jam 07:00 WIB';
@@ -71,3 +71,6 @@ Route::get('siswa/{nama}/{nilai?}', function ($nama,$nilai = ' Belum Memiliki Ni
     }
     return 'Halo : '.$nama.'<br> '.$nilai.'<br> '.$grade;
 });
+
+Route::get('contoh','ContohController@latihan');
+Route::get('profile','ContohController@latihan2');

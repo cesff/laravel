@@ -27,9 +27,25 @@ class BukuSeeder extends Seeder
         $buku->synopsis = 'Ini adalah.....';
         $buku->status = 1;
         $buku->save();
-
+        
         $buku = new Buku;
         $buku->judul = 'Belajar PHP 3';
+        $buku->jumlah_halaman = 100;
+        $buku->penerbit = 'Gramedia Pustaka';
+        $buku->synopsis = 'Ini adalah.....';
+        $buku->status = 1;
+        $buku->save();
+
+        $buku = new Buku;
+        $buku->judul = 'Belajar PHP 90';
+        $buku->jumlah_halaman = 100;
+        $buku->penerbit = 'Gramedia Pustaka';
+        $buku->synopsis = 'Ini adalah.....';
+        $buku->status = 1;
+        $buku->save();
+
+        $buku = new Buku;
+        $buku->judul = 'Belajar PHP 5';
         $buku->jumlah_halaman = 100;
         $buku->penerbit = 'Gramedia Pustaka';
         $buku->synopsis = 'Ini adalah.....';

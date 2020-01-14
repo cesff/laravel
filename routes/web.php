@@ -76,3 +76,16 @@ Route::get('contoh','ContohController@latihan');
 Route::get('profile','ContohController@latihan2');
 Route::get('profile2','ContohController@latihan3');
 Route::get('profile3','ContohController@latihan4');
+Route::get('biodata','ContohController@biodata');
+
+Route::get('menu/{makan?}','ContohController@pesan');
+Route::get('mao/{makan?}/{makan2?}/{harga?}','ContohController@pesan2');
+
+//Crud
+Route::get('get-buku','BukuController@index');
+Route::get('buatdata/{judul}','BukuController@buatdata');
+Route::get('get-buku/{id}','BukuController@show');
+Route::get('delete-buku/{id}','BukuController@delete');
+Route::get('update-buku/{id}','BukuController@update');
+
+Route::get('hitung-buku','BukuController@hitungbuku');

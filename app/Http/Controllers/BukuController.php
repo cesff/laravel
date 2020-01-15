@@ -20,7 +20,7 @@ class BukuController extends Controller
         $buku = Buku::find($id);
         return $buku;
         }
-    public function buatdata($judul){
+    public function buatdata($a){
     $buku = new Buku();
     $buku->judul = $a;
     $buku->jumlah_halaman = 150;
@@ -29,14 +29,14 @@ class BukuController extends Controller
     $buku->status = 1;
     $buku->Save();
     return $buku;
-    }    
-    public function update($id){
+    }
+    public function update($id,$a){
         $buku = Buku::find($id);
-        $buku->judul = 'Buku Update';
+        $buku->judul = $a;
         $buku->jumlah_halaman = 100;
         $buku->penerbit = 'Lorem Ipsum';
         $buku->synopsis = 'CV Lorem Ipsum';
-        $buku->status = false;
+        $buku->status = 1;
         $buku->Save();
         return $buku;
     }

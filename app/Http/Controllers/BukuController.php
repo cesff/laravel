@@ -8,18 +8,20 @@ use App\Buku;
 class BukuController extends Controller
 {
     public function index(){
-    $buku = Buku::select('judul','jumlah_halaman','penerbit')->take(3)->first();
-    //$buku = Buku::all();
-    return $buku;
+    $buku = Buku::all();
+    return view('buku.index',compact('buku'));
     }
+
+    public function show($id){
+        $buku = Buku::find($id);
+        return view('buku.show',compact('buku'));
+    }
+
     public function hitungbuku(){
     $buku = Buku::count();
     return $buku;
     }
-    public function show($id){
-        $buku = Buku::find($id);
-        return $buku;
-        }
+
     public function buatdata($a){
     $buku = new Buku();
     $buku->judul = $a;

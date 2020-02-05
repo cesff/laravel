@@ -82,9 +82,9 @@ Route::get('menu/{makan?}','ContohController@pesan');
 Route::get('mao/{makan?}/{makan2?}/{harga?}','ContohController@pesan2');
 
 //Crud
-Route::get('get-buku','BukuController@index');
+Route::get('book','BukuController@index');
+Route::get('book/{id}','BukuController@show');
 Route::get('buatdata/{judul}','BukuController@buatdata');
-Route::get('get-buku/{id}','BukuController@show');
 Route::get('delete-buku/{id}','BukuController@delete');
 Route::get('update-buku/{id}/{judul}','BukuController@update');
 
@@ -96,3 +96,16 @@ Route::get('buatdata/{nama}/{nis}','SiswaController@buatdata');
 Route::get('get-siswa/{id}','SiswaController@show');
 Route::get('delete-siswa/{id}','SiswaController@delete');
 Route::get('update-siswa/{id}/{nama}/{nis}','SiswaController@update');
+
+//passing data
+Route::get('pass','PracticeController@pass');
+Route::get('pass1','PracticeController@pass1');
+
+//passing data parameter
+Route::get('status/{a?}','PracticeController@status');
+
+//looping
+Route::get('buku','PracticeController@loop');
+
+Route::get('uang','GajiController@index');
+Route::get('uang/{id}','GajiController@show');

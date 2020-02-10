@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <center>Daftar Gaji
-    <table border="1">
+    <center>Daftar Gaji</center>
+    <table border="1" align="center">
          <thead>
-            <tr>
+            <tr><br>
                 <th>Nip</th>
                 <th>Nama</th>
                 <th>Jenis Kelamin</th>
@@ -30,6 +30,6 @@
             @endforeach
         </tbody>
     </table>
-</center>
+</table>
 </body>
 </html>
